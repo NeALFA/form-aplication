@@ -139,13 +139,7 @@ body {
   flex-direction: column;
   gap: 6px;
 }
-#body .login .login-button {
-  position: relative;
-}
 #body .login .login-button .submit {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   max-width: 370px;
   padding: 16px 24px;
