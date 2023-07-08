@@ -127,7 +127,6 @@ passwordInput.addEventListener("keyup", () => {
       window.open("../table.html");
     });
   } else {
-    buttonLogin.style.top = 3500 + "px";
-    buttonLogin.style.left = 3500 + "px";
+    alert("parol", 31);
   }
 });
