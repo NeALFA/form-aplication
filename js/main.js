@@ -116,17 +116,4 @@ positionFilter.addEventListener("change", function () {
 
 ///////////////index page////////////
 
-const passwordInput = document.querySelector(".password-input");
-const buttonLogin = document.querySelector(".submit");
-const body = document.getElementById("#body");
 
-passwordInput.addEventListener("keyup", () => {
-  password = passwordInput.value;
-  if (password === "31") {
-    buttonLogin.addEventListener("click", () => {
-      window.open("../table.html");
-    });
-  } else {
-    alert("parol", 31);
-  }
-});
