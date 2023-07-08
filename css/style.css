@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia+Sans:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --liner-gradient: linear-gradient(
+    90deg,
+    rgba(16, 17, 173, 1) 6%,
+    rgba(9, 43, 121, 1) 31%,
+    rgba(196, 5, 195, 1) 78%,
+    rgba(255, 0, 249, 1) 93%
+  );
+  --liner-gradient-two: linear-gradient(
+    90deg,
+    rgba(196, 5, 195, 1) 3%,
+    rgba(255, 0, 249, 1) 30%,
+    rgba(16, 17, 173, 1) 68%,
+    rgba(9, 43, 121, 1) 91%
+  );
+  --liner-gradient-three: linear-gradient(
+    90deg,
+    red 0% 50%,
+    blue 50% ,
+  );
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body {
+  background-image: url("../images/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+#body .login {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 510px;
+  padding: 50px 70px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
+  box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.37);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+@media (max-width: 550px) {
+  #body .login {
+    padding: 20px 15px;
+  }
+}
+#body .login .login-title {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#body .login label {
+  color: black;
+  font-family: "Sofia Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+#body .login input {
+  background: var(--liner-gradient-two);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  max-width: 370px;
+  height: 50px;
+  padding: 18px 12px;
+  border-radius: 4px;
+  border: 1px solid #575757;
+  -o-border-image: var(--liner-gradient-two);
+     border-image: var(--liner-gradient-two);
+  border-image-slice: 1;
+  font-size: 20px;
+  background-color: transparent;
+}
+#body .login input::-moz-placeholder {
+  color: #787878;
+  font-family: "Sofia Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#body .login input::placeholder {
+  color: #787878;
+  font-family: "Sofia Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#body .login .login-email,
+#body .login .login-password {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#body .login .login-button button {
+  width: 100%;
+  max-width: 370px;
+  padding: 16px 24px;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Sofia Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  background: var(--liner-gradient-two);
+  gap: 10px;
+  border-radius: 4px;
+}
+#body .login .login-forgot {
+  display: flex;
+  justify-content: space-between;
+  gap: 118px;
+}
+@media (max-width: 550px) {
+  #body .login .login-forgot {
+    gap: 15px;
+  }
+}
+#body .login .login-forgot a {
+  color: #787878;
+  text-align: right;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
