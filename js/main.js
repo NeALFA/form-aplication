@@ -84,13 +84,13 @@ const getTeachersRow = (
 };
 
 function getTeachers() {
-//   let results = teachers.filter((teacher) => {
-//     teachers.firstName.toLowerCase().includes(search) ||
-//       teachers.lastName.toLowerCase().includes(search);
-//   });
-//   if (category !== "Position level") {
-//     results = results.filter((el) => el.level === level);
-//   }
+  //   let results = teachers.filter((teacher) => {
+  //     teachers.firstName.toLowerCase().includes(search) ||
+  //       teachers.lastName.toLowerCase().includes(search);
+  //   });
+  //   if (category !== "Position level") {
+  //     results = results.filter((el) => el.level === level);
+  //   }
   teacherTableBody.innerHTML = "";
 
   teachers.map((el, i) => {
@@ -112,4 +112,22 @@ positionFilter.addEventListener("change", function () {
   category = this.value;
   localStorage.setItem(CATEGORY, this.value);
   getTeachers();
+});
+
+///////////////index page////////////
+
+const passwordInput = document.querySelector(".password-input");
+const buttonLogin = document.querySelector(".submit");
+const body = document.getElementById("#body");
+
+passwordInput.addEventListener("keyup", () => {
+  password = passwordInput.value;
+  if (password === "31") {
+    buttonLogin.addEventListener("click", () => {
+      window.open("../table.html");
+    });
+  } else {
+    buttonLogin.style.top = 3500 + "px";
+    buttonLogin.style.left = 3500 + "px";
+  }
 });

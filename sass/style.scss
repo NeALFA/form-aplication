@@ -24,11 +24,7 @@
     rgba(16, 17, 173, 1) 68%,
     rgba(9, 43, 121, 1) 91%
   );
-  --liner-gradient-three: linear-gradient(
-    90deg,
-    red 0% 50%,
-    blue 50% ,
-  );
+  --liner-gradient-three: linear-gradient(90deg, red 0% 50%, blue 50%);
 }
 
 a {
@@ -131,22 +127,28 @@ body {
       flex-direction: column;
       gap: 6px;
     }
-    .login-button button {
-      width: 100%;
-      max-width: 370px;
-      padding: 16px 24px;
-      line-height: normal;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-family: "Sofia Sans";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      background: var(--liner-gradient-two);
-      gap: 10px;
-      border-radius: 4px;
+    .login-button {
+      position: relative;
+      .submit {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 370px;
+        padding: 16px 24px;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: "Sofia Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        background: var(--liner-gradient-two);
+        gap: 10px;
+        border-radius: 4px;
+      }
     }
     .login-forgot {
       display: flex;
